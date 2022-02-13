@@ -1,0 +1,14 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.line,
+.mark-line {
+  display: block;
+  min-width: 100%;
+  width: max-content;
+}
+
+.mark-line {
+  background: red;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <title>sourcemap定位源码错误</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/source-map@0.7.3/dist/source-map.js"></script>
+  <script>
+    sourceMap.SourceMapConsumer.initialize({
+      "lib/mappings.wasm":
+        "https://unpkg.com/source-map@0.7.3/lib/mappings.wasm"
+    });
+  </script>
+</html>
